@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+const cors = require('cors');
+app.use(cors()); // For a demo, this allows all origins
 
 // GET endpoint - name as query parameter
 // Example: http://localhost:3000/hello?name=John
