@@ -1,0 +1,16 @@
+{
+  "name": "node-hello-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js API that returns hello with a name",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["hello", "api", "node"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
